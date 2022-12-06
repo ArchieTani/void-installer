@@ -12,7 +12,7 @@ export ERASEALL=0
 
 # Logical Volume name for your Linux installation. 
 # Keep it unique from other distribution.
-export LVROOTNAME="anko"
+export LVROOTNAME="archie"
 
 # Suffix of the optional logical volumes. 
 # If you want to have optional OVs, set USELVEXT# to 1. 
@@ -44,7 +44,7 @@ export LVEXT2SUFFIX="_var"
 # Set the size of EFI partition and swap partition. 
 # The unit is Byte. You can use M,G[Kaiten-Yaki]  notation.
 # You CANNOT use the % notation. 
-export EFISIZE="200M"
+export EFISIZE="512M"
 
 # Logical volume size of the swap volumes. 
 export LVSWAPSIZE="8G"
@@ -54,7 +54,7 @@ export LVSWAPSIZE="8G"
 # nnnM, nnnG, nnnT : Absolute size speicification. nnnMbyte, nnnGByte, nnnT byte.  
 # mm%VG : Use mm% of the entire volume group. 
 # mm%FREE : Use mm% of the avairable storage are in the volume group. 
-export LVROOTSIZE="10G"
+export LVROOTSIZE="100%FREE"
 
 # Logical volume size of the optional volumes. 
 export LVEXT1SIZE="30G"
@@ -64,13 +64,13 @@ export LVEXT2SIZE="10G"
 # Usually, these names can be left untouched. 
 # If you change, keep them consistent through all installation in your system.
 export CRYPTPARTNAME="luks_volume"
-export VGNAME="vg1"
+export VGNAME="vg0"
 export LVSWAPNAME="swap"
 
 # Do not touch this parameter, unless you understand what you are doing.
 # 1 : Overwrite the existing logical volume as root volume. 
 # 0 : Create new logical volume as root volume. 
-export OVERWRITEINSTALL=0
+export OVERWRITEINSTALL=1
 
 # Do not touch this parameter, unless you understand what you are doing.
 # This is a paameter value of the --iter-time option for cyrptsetup command. 
