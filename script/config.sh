@@ -70,7 +70,7 @@ export LVSWAPNAME="swap"
 # Do not touch this parameter, unless you understand what you are doing.
 # 1 : Overwrite the existing logical volume as root volume. 
 # 0 : Create new logical volume as root volume. 
-export OVERWRITEINSTALL=1
+export OVERWRITEINSTALL=0
 
 # Do not touch this parameter, unless you understand what you are doing.
 # This is a paameter value of the --iter-time option for cyrptsetup command. 
